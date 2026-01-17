@@ -68,6 +68,36 @@ header h1 {
     margin-bottom: 15px;
 }
 
+/* About Section with Image */
+.about-section .about-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about-image {
+    flex-shrink: 0;
+}
+
+.about-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 0;
+}
+
+/* Services Section */
 .service-description {
     font-style: italic;
     color: #bbb;
@@ -224,6 +254,17 @@ footer p {
         font-size: 1.8em;
     }
 
+    /* Stack image and text on mobile */
+    .about-section .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 200px;
+        height: 200px;
+    }
+
     .cta-box {
         padding: 30px 20px;
     }
@@ -244,6 +285,11 @@ footer p {
 
     .content-box h2 {
         font-size: 1.5em;
+    }
+
+    .about-image img {
+        width: 180px;
+        height: 180px;
     }
 
     .cta-button {
