@@ -98,6 +98,30 @@ header h1 {
     margin-bottom: 0;
 }
 
+.get-started-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 2px solid #555;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #1a1a1a;
+    border-color: #777;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
 /* Services Section */
 .service-description {
     font-style: italic;
