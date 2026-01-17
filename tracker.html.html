@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFFIT | Fitness Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tracker-styles.css">
+</head>
+<body>
+    <header>
+        <h1>MFFIT | Fitness Tracker</h1>
+        <a href="index.html" class="back-link">← Back to Main Site</a>
+    </header>  
+
+    <div class="welcome-box">
+        <p>Welcome to MFFIT Fitness Tracker</p>
+        <p>Your personal companion for tracking workouts, monitoring progress, and achieving your fitness goals. Designed with simplicity and functionality in mind, MFFIT helps you stay motivated and organized on your fitness journey.</p>
+    </div>
+
+    <div class="form-box">
+        <h2>Log Your Workout</h2>
+        <form id="workout-form">
+            <label for="workout-type">Select Workout Type:</label>
+            <select id="workout-type" required>
+                <option value="">Select your training</option>
+                <option value="weights">Weights/Strength Training</option>
+                <option value="running">Running</option>
+                <option value="hiit">HIIT</option>
+                <option value="cardio">Cardio</option>
+                <option value="yoga">Yoga</option>
+                <option value="other">Other</option>
+            </select>
+
+            <div id="dynamic-fields">
+                <div id="date-field" style="display: none;">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <div id="weights-fields" class="workout-fields" style="display: none;">
+                    <label for="weights-exercise">Exercise:</label>
+                    <input type="text" id="weights-exercise" placeholder="e.g., Bench Press, Squats">
+
+                    <label for="weight">Weight (lbs):</label>
+                    <input type="number" id="weight" placeholder="135">
+
+                    <label for="reps">Reps:</label>
+                    <input type="number" id="reps" placeholder="10">
+
+                    <label for="sets">Sets:</label>
+                    <input type="number" id="sets" placeholder="3">
+                </div>
+
+                <div id="running-fields" class="workout-fields" style="display: none;">
+                    <label for="running-activity">Activity:</label>
+                    <input type="text" id="running-activity" placeholder="e.g., Morning 5K">
+
+                    <label for="distance">Distance (miles):</label>
+                    <input type="number" step="0.1" id="distance" placeholder="3.1">
+
+                    <label for="run-time">Time:</label>
+                    <input type="text" id="run-time" placeholder="28:45">
+                </div>
+
+                <div id="hiit-fields" class="workout-fields" style="display: none;">
+                    <label for="hiit-workout">Workout Name:</label>
+                    <input type="text" id="hiit-workout" placeholder="e.g., Tabata Burpees">
+
+                    <label for="duration">Duration (minutes):</label>
+                    <input type="number" id="duration" placeholder="20">
+                </div>
+
+                <div id="cardio-fields" class="workout-fields" style="display: none;">
+                    <label for="cardio-activity">Activity:</label>
+                    <input type="text" id="cardio-activity" placeholder="e.g., Elliptical, Cycling">
+
+                    <label for="cardio-duration">Duration (minutes):</label>
+                    <input type="number" id="cardio-duration" placeholder="30">
+
+                    <label for="calories">Calories Burned (optional):</label>
+                    <input type="number" id="calories" placeholder="250">
+                </div>
+
+                <div id="yoga-fields" class="workout-fields" style="display: none;">
+                    <label for="yoga-type">Class Type:</label>
+                    <input type="text" id="yoga-type" placeholder="e.g., Vinyasa, Hatha">
+
+                    <label for="yoga-duration">Duration (minutes):</label>
+                    <input type="number" id="yoga-duration" placeholder="60">
+
+                    <label for="difficulty">Difficulty:</label>
+                    <select id="difficulty">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <div id="other-fields" class="workout-fields" style="display: none;">
+                    <label for="other-activity">Activity:</label>
+                    <input type="text" id="other-activity" placeholder="Describe your workout">
+
+                    <label for="other-details">Details:</label>
+                    <input type="text" id="other-details" placeholder="Duration, intensity, etc.">
+                </div>
+
+                <div id="common-fields" style="display: none;">
+                    <label for="notes">Notes (optional):</label>
+                    <textarea id="notes" placeholder="How did it feel?"></textarea>
+
+                    <button type="submit">Save Workout</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <main>  
+        <div class="Fitness-Tracker">
+            <section class="history-section">
+                <h2>My Workout History</h2>
+                <div id="workout-history">
+                    <p class="no-workouts">No workouts logged yet. Start tracking your fitness journey!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MFFIT. All rights reserved.</p>
+    </footer>
+
+    <script src="tracker.js"></script>
+</body>
+</html>

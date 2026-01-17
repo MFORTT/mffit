@@ -1,0 +1,280 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 5px;
+    background: #1a1a1a;
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid #333;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #ffffff;
+    font-weight: 800;
+    margin: 0;
+    font-size: 2.8em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.back-link {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #999;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #fff;
+}
+
+.welcome-box {
+    max-width: 550px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: rgba(44, 44, 44, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.welcome-box h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.welcome-box p {
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.form-box {
+    max-width: 550px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: rgba(44, 44, 44, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.form-box h2 {
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.form-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.form-box textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-box button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #000000;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #1a1a1a;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin: 40px auto 0;
+    clear: both;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.history-section {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(44, 44, 44, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    max-width: 550px;
+}
+
+.history-section h2 {
+    color: white;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+}
+
+#workout-history {
+    margin-top: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+    #workout-history {
+        max-height: 50vh;
+    }
+    
+    .welcome-box,
+    .form-box,
+    .history-section {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+
+    .back-link {
+        position: static;
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #workout-history {
+        max-height: 40vh;
+    }
+    
+    header h1 {
+        font-size: 1.5em;
+    }
+}
+
+.no-workouts {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    padding: 20px;
+}
+
+.workout-item {
+    background-color: rgba(26, 26, 26, 0.55);
+    border-left: 4px solid rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.workout-item h3 {
+    margin: 0 0 10px 0;
+    color: white;
+    text-transform: capitalize;
+}
+
+.workout-item ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.workout-item li {
+    margin: 8px 0;
+    color: #e0e0e0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.workout-item li:before {
+    content: "•";
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.workout-item strong {
+    color: white;
+}
+
+.workout-item[data-type="weights"] { 
+    border-left: 4px solid #e74c3c;
+}
+.workout-item[data-type="running"] { 
+    border-left: 4px solid #3498db;
+}
+.workout-item[data-type="hiit"] { 
+    border-left: 4px solid #e67e22;
+}
+.workout-item[data-type="cardio"] { 
+    border-left: 4px solid #e91e63;
+}
+.workout-item[data-type="yoga"] { 
+    border-left: 4px solid #9b59b6;
+}
+.workout-item[data-type="other"] { 
+    border-left: 4px solid #95a5a6;
+}
+
+.workout-fields {
+    margin-top: 15px;
+}
